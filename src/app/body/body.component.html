@@ -3,7 +3,7 @@
     <div>
       <img src="../../assets/images/png/marketing.png" loading="lazy">
     </div>
-    <div class="flex flex-col mt-32">
+    <div class="flex flex-col mt-1">
       <div>
         <img class="h-96 w-auto" src="../../assets/images/png/pravisco-bg-logo.png" loading="lazy">
       </div>
@@ -11,18 +11,18 @@
         PRAVISCO
       </div>
       <div class="flex justify-center custom-font italic text-2xl font-normal text-gray-900">
-        We turn your ideas into reality!
+        Turn your ideas into reality!
       </div>
       <div class="flex justify-between pt-8">
         <div>
           <button type="button"
-            class="py-2 px-4 moveUp bg-white text-gray-500 font-semibold rounded-full shadow-md hover:shadow-xl focus:outline-none">24/7
+            class="py-2 px-4 w-52 moveUp bg-white text-gray-500 font-semibold rounded-full shadow-md hover:shadow-xl focus:outline-none">24/7
             Customer Support</button>
         </div>
         <div>
           <button type="button"
-            class="py-2 px-4 moveUp bg-gray-500 text-white font-semibold rounded-full shadow-md hover:shadow-xl focus:outline-none">24/7
-            Customer Support</button>
+            class="py-2 px-4 w-52 moveUp bg-gray-500 text-white font-semibold rounded-full shadow-md hover:shadow-xl focus:outline-none">Schedule
+            Call</button>
         </div>
       </div>
     </div>
@@ -31,7 +31,36 @@
     </div>
   </div>
 
+  <div class="flex justify-evenly">
+    <div class="-translate-x-10">
+      <img src="../../assets/images/png/floating_girl.png" loading="lazy">
+    </div>
+    <div>
+      <img src="../../assets/images/png/orange_bean.png" loading="lazy">
+    </div>
+  </div>
+
   <div>
     <img src="../../assets/images/png/white_bottom_wave.png" loading="lazy">
   </div>
+
+  <div class="bg-white flex flex-col items-center">
+    <div class="pt-6 text-5xl tracking-wide font-semibold text-gray-700">
+      World Class Quality
+    </div>
+    <div class="pt-3 pb-6 custom-font italic text-2xl font-normal text-gray-900">
+      Expertise on all the latest technologies. our software quality is second to none.
+    </div>
+  </div>
+
+  <div class="carousel-overlap">
+    <div class="bg-white flex justify-center carousel-div">
+      <img [class]="fade == false ? 'fade-out-effect' : 'fade-in-effect'" [src]="carouselImage" loading="lazy">
+    </div>
+
+    <div class="wave-2-div z-10">
+      <img class="wave-2" src="../../assets/images/png/wave-2.png" loading="lazy">
+    </div>
+  </div>
+
 </div>
