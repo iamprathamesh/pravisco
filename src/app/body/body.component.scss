@@ -12,6 +12,21 @@
   font-family: "IBM Plex Serif", serif;
 }
 
+.main-grid {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.main-label {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 10;
+}
+
+.bean-on-main {
+  grid-column: 1 / span 1;
+  grid-row: 10 / span 4;
+}
+
 .carousel-overlap {
   display: grid;
   grid-template-columns: auto;
@@ -51,4 +66,26 @@
   animation-duration: 4s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
+}
+
+.flip-x {
+  transform: scaleX(-1);
+}
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.number {
+  transition: --num 5s;
+  counter-set: num var(--num);
+  font: 800 40px system-ui;
+}
+.number::after {
+  content: counter(num);
+}
+.number:hover {
+  --num: 100;
 }

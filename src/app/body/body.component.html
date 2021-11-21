@@ -1,42 +1,44 @@
 <div class="bg-off-white">
-  <div class="flex justify-between">
-    <div>
-      <img src="../../assets/images/png/marketing.png" loading="lazy">
-    </div>
-    <div class="flex flex-col mt-1">
+  <div class="main-grid">
+    <div class="flex justify-between z-30 main-label">
       <div>
-        <img class="h-96 w-auto" src="../../assets/images/png/pravisco-bg-logo.png" loading="lazy">
+        <img src="../../assets/images/png/marketing.png" loading="lazy">
       </div>
-      <div class="flex justify-center text-7xl font-bold tracking-widest text-gray-700">
-        PRAVISCO
-      </div>
-      <div class="flex justify-center custom-font italic text-2xl font-normal text-gray-900">
-        Turn your ideas into reality!
-      </div>
-      <div class="flex justify-between pt-8">
+      <div class="flex flex-col mt-1">
         <div>
-          <button type="button"
-            class="py-2 px-4 w-52 moveUp bg-white text-gray-500 font-semibold rounded-full shadow-md hover:shadow-xl focus:outline-none">24/7
-            Customer Support</button>
+          <img class="h-96 w-auto" src="../../assets/images/png/pravisco-bg-logo.png" loading="lazy">
         </div>
-        <div>
-          <button type="button"
-            class="py-2 px-4 w-52 moveUp bg-gray-500 text-white font-semibold rounded-full shadow-md hover:shadow-xl focus:outline-none">Schedule
-            Call</button>
+        <div class="flex justify-center text-7xl font-bold tracking-widest text-gray-700">
+          PRAVISCO
         </div>
+        <div class="flex justify-center custom-font italic text-2xl font-normal text-gray-900">
+          Cloning ideas into reality!
+        </div>
+        <div class="flex justify-between pt-8">
+          <div>
+            <button type="button"
+              class="py-2 px-4 w-52 moveUp bg-white text-gray-500 font-semibold rounded-full shadow-md hover:shadow-xl focus:outline-none">24/7
+              Customer Support</button>
+          </div>
+          <div>
+            <button type="button"
+              class="py-2 px-4 w-52 moveUp bg-gray-500 text-white font-semibold rounded-full shadow-md hover:shadow-xl focus:outline-none">Schedule
+              Call</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="../../assets/images/png/hero.png" loading="lazy">
       </div>
     </div>
-    <div>
-      <img src="../../assets/images/png/hero.png" loading="lazy">
-    </div>
-  </div>
 
-  <div class="flex justify-evenly">
-    <div class="oscillate-image">
-      <img src="../../assets/images/png/floating_girl.png" loading="lazy">
-    </div>
-    <div class="oscillate-image">
-      <img src="../../assets/images/png/orange_bean.png" loading="lazy">
+    <div class="flex justify-evenly bean-on-main">
+      <div class="">
+        <img src="../../assets/images/png/floating_girl.png" loading="lazy">
+      </div>
+      <div class="">
+        <img src="../../assets/images/png/orange_bean.png" loading="lazy">
+      </div>
     </div>
   </div>
 
@@ -58,9 +60,64 @@
       <img [class]="fade == false ? 'fade-out-effect' : 'fade-in-effect'" [src]="carouselImage" loading="lazy">
     </div>
 
-    <div class="wave-2-div z-10">
+    <div class="wave-2-div z-30">
       <img class="wave-2" src="../../assets/images/png/wave-2.png" loading="lazy">
     </div>
   </div>
 
+  <div class="number">
+
+  </div>
+
+  <div class="flex">
+    <div class=" flex-1">
+      <img class="float-right" src="../../assets/images/png/CostCalculator.png" loading="lazy">
+    </div>
+    <div class="pl-12 flex-1">
+      Test
+    </div>
+  </div>
+
+  <div class="flip-x">
+    <img src="../../assets/images/png/white_bottom_wave.png" loading="lazy">
+  </div>
+
+  <div class="bg-white flex flex-col items-center">
+    <div class="">
+      Here's what our clients have to say
+    </div>
+    <div>
+      <app-testimonial></app-testimonial>
+    </div>
+  </div>
+
+  <div class="flex bg-gray-800">
+    <div class="flex flex-col flex-1 px-64">
+      <div class="text-white">
+        <a routerLink="/">About Us</a>
+      </div>
+      <div class="text-white">
+        <a routerLink="/">Careers</a>
+      </div>
+      <div class="text-white">
+        <a routerLink="/">Schedule Call</a>
+      </div>
+    </div>
+    <div class="flex flex-col flex-1 px-20">
+      <div class="text-white">
+        Subscribe to newsletter
+      </div>
+      <div>
+        <input type="text" placeholder="Email" />
+        <button
+          class="ml-6 px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+          Submit
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex justify-center bg-gray-900 text-white">
+    Copyright © 2017-2022 Pravisco
+  </div>
 </div>
