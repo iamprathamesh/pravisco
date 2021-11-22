@@ -1,18 +1,26 @@
-<div class="flex flex-col items-center">
+<div [class]="fade == false ? 'fade-out-effect' : 'fade-in-effect'" class="flex flex-col items-center">
   <div class="flex items-center">
-    <div>
+    <div (click)="moveLeft()"
+      class="h-12 w-12 flex items-center justify-center rounded-full text-gray-400 cursor-pointer hover:text-purple-600 hover:bg-gray-100 select-none">
       <fa-icon [icon]="faArrowLeft"></fa-icon>
     </div>
-    <div class="max-w-3xl	text-center">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+    <div class="max-w-3xl	text-center text-gray-600">
+      <fa-icon [icon]="faQuoteLeft" size="lg"></fa-icon>
+      {{currentTestimonial.testimonial}}
+      <!-- <fa-icon [icon]="faQuoteRight" size="lg"></fa-icon> -->
     </div>
-    <div>
+    <div (click)="moveRight()"
+      class="h-12 w-12 flex items-center justify-center rounded-full text-gray-400 cursor-pointer hover:text-purple-600 hover:bg-gray-100 select-none">
       <fa-icon [icon]="faArrowRight"></fa-icon>
     </div>
   </div>
 
-  <div>
-    <img class="rounded-full max-h-20 max-w-20" src="../../assets/images/png/hero.png">
+  <div class="pt-3 pb-6 flex flex-col items-center">
+    <div class="py-1 cursor-pointer">
+      <img class="rounded-full max-h-12 max-w-12" [src]="currentTestimonial.img">
+    </div>
+    <div class="py-1 text-gray-600 text-sm font-semibold">
+      {{currentTestimonial.name}}
+    </div>
   </div>
 </div>

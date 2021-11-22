@@ -25,4 +25,9 @@ export class BodyComponent implements OnInit {
     }, 3000);
   }
 
+  subscribeToNewsletter() {
+    const inp = document.getElementById('email') as any;
+    inp.value = '';
+  }
+
 }

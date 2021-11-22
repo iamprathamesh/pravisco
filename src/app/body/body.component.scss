@@ -72,6 +72,10 @@
   transform: scaleX(-1);
 }
 
+.flip-y {
+  transform: scaleY(-1);
+}
+
 @property --num {
   syntax: "<integer>";
   initial-value: 0;
