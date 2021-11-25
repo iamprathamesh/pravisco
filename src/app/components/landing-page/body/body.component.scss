@@ -15,17 +15,19 @@
 .main-grid {
   display: grid;
   grid-template-columns: auto;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 5;
 }
 
-.main-label {
-  grid-column: 1 / span 1;
-  grid-row: 1 / span 10;
-}
+// .main-label {
+//   grid-column: 1 / span 1;
+//   grid-row: 1 / span 10;
+// }
 
-.bean-on-main {
-  grid-column: 1 / span 1;
-  grid-row: 10 / span 4;
-}
+// .bean-on-main {
+//   grid-column: 1 / span 1;
+//   grid-row: 10 / span 4;
+// }
 
 .carousel-overlap {
   display: grid;
@@ -96,4 +98,44 @@
 
 .logo {
   width: 200px;
+}
+
+.parent-grid {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.wave-1 {
+  grid-column: 1 / span 1;
+  grid-row: 5 / span 4;
+}
+
+.grid-cards {
+  grid-column: 1 / span 1;
+  grid-row: 10 / span 5;
+}
+
+.first-white-section {
+  grid-column: 1 / span 1;
+  grid-row: 15 / span 15;
+}
+
+.curved-bg {
+  grid-column: 1 / span 1;
+  grid-row: 30 / span 5;
+}
+
+.world-class-grid {
+  grid-column: 1 / span 1;
+  grid-row: 30 / span 5;
+}
+
+.computer-carousel {
+  grid-column: 1 / span 1;
+  grid-row: 35 / span 5;
+}
+
+.footer-grid {
+  grid-column: 1 / span 1;
+  grid-row: 40 / span 5;
 }

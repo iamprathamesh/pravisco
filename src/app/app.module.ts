@@ -3,11 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BodyComponent } from './body/body.component';
-import { HeaderComponent } from './header/header.component';
-import { TestimonialComponent } from './testimonial/testimonial.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './components/landing-page/header/header.component';
+import { BodyComponent } from './components/landing-page/body/body.component';
+import { TestimonialComponent } from './components/landing-page/testimonial/testimonial.component';
+import { FooterComponent } from './components/landing-page/footer/footer.component';
+import { CareersComponent } from './components/careers/career.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     BodyComponent,
     TestimonialComponent,
-    FooterComponent
+    FooterComponent,
+    CareersComponent
   ],
   imports: [
     BrowserModule,
