@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from "@angular/core";
+import { Component, Input, OnInit, ViewChild } from "@angular/core";
+import { ToasterService } from "../../toaster/toaster.service";
 
 @Component({
   selector: 'app-footer',
@@ -9,13 +10,17 @@ export class FooterComponent implements OnInit {
 
   copyrightYear = new Date().getFullYear();
   @Input() stickyFooter: boolean = false;
+  @ViewChild('email', { static: true }) email: any;
 
-  constructor() { }
+  constructor(private toasterService: ToasterService) { }
 
   ngOnInit() { }
 
   subscribeToNewsletter() {
-    const inp = document.getElementById('email') as any;
+    const inp = this.email.nativeElement as any;
+    if (inp.value == '') return;
+
     inp.value = '';
+    this.toasterService.createToast('Success', 'You will recieve email from now.');
   }
 }

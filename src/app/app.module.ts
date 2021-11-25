@@ -9,6 +9,8 @@ import { BodyComponent } from './components/landing-page/body/body.component';
 import { TestimonialComponent } from './components/landing-page/testimonial/testimonial.component';
 import { FooterComponent } from './components/landing-page/footer/footer.component';
 import { CareersComponent } from './components/careers/career.component';
+import { ToasterComponent } from './components/toaster/toaster.component';
+import { ToasterService } from './components/toaster/toaster.service';
 
 @NgModule({
   declarations: [
@@ -17,14 +19,15 @@ import { CareersComponent } from './components/careers/career.component';
     BodyComponent,
     TestimonialComponent,
     FooterComponent,
-    CareersComponent
+    CareersComponent,
+    ToasterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule
   ],
-  providers: [],
+  providers: [ToasterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

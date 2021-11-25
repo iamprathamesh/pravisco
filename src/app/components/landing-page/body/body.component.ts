@@ -1,4 +1,5 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewChild } from "@angular/core";
+import { ToasterService } from "../../toaster/toaster.service";
 
 @Component({
   selector: 'app-body',
@@ -10,8 +11,9 @@ export class BodyComponent implements OnInit {
   carousels: string[] = ["../../assets/images/png/carousel-1.png", "../../assets/images/png/carousel-2.png", "../../assets/images/png/carousel-3.png", "../../assets/images/png/carousel-4.png", "../../assets/images/png/carousel-5.png"]
   carouselImage: string = this.carousels[0];
   fade: boolean = false;
+  @ViewChild('email', { static: true }) email: any;
 
-  constructor() { }
+  constructor(private toasterService: ToasterService) { }
 
   ngOnInit() {
     let counter = 1;
@@ -26,8 +28,11 @@ export class BodyComponent implements OnInit {
   }
 
   subscribeToNewsletter() {
-    const inp = document.getElementById('email') as any;
+    const inp = this.email.nativeElement as any;
+    if (inp.value == '') return;
+
     inp.value = '';
+    this.toasterService.createToast('Success', 'You will recieve email from now.');
   }
 
 }

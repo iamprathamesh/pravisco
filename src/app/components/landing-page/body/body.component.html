@@ -1,5 +1,6 @@
 <app-header></app-header>
 <div class="bg-off-white parent-grid">
+  <app-toaster></app-toaster>
   <div class="main-grid">
     <div class="flex justify-between z-30 main-label">
       <div>
@@ -431,7 +432,7 @@
           Subscribe to newsletter
         </div>
         <div class="py-2">
-          <input id="email" type="email" placeholder="Email" />
+          <input #email type="email" placeholder="Email" />
           <button (click)="subscribeToNewsletter()"
             class="ml-6 px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
             Submit
