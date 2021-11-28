@@ -1,3 +1,5 @@
+import { environment } from "./src/environments/environment";
+
 module.exports = {
   prefix: '',
   purge: {
@@ -22,7 +24,7 @@ module.exports = {
   },
   plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
   purge: {
-    enabled: process.env.NODE_ENV === 'production',
+    enabled: environment.production === true,
     content: [
       './src/**/*.{html,ts}',
     ]
