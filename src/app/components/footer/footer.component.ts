@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, ViewChild } from "@angular/core";
-import { ToasterService } from "../../toaster/toaster.service";
+import { ToasterService } from "../toaster/toaster.service";
 
 @Component({
   selector: 'app-footer',
